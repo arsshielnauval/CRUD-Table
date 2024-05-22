@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Cars</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>CRUD Car Data</h1>
+    <table id="carTable">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Brand</th>
+                <th>Type</th>
+                <th>Price</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Data akan dimuat di sini -->
+        </tbody>
+    </table>
+    <button id="addCarBtn">Add Car</button>
+
+    <!-- Form untuk tambah/edit data -->
+    <div id="carForm" style="display: none;">
+        <input type="hidden" id="carId">
+        <label for="brand">Brand:</label>
+        <input type="text" id="brand"><br>
+        <label for="type">Type:</label>
+        <input type="text" id="type"><br>
+        <label for="price">Price:</label>
+        <input type="number" id="price"><br>
+        <button id="saveCarBtn">Save</button>
+        <button id="cancelBtn">Cancel</button>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
